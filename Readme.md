@@ -2,6 +2,10 @@
 
 
 ## Tech Stack
+
+- ✔️ Frontend - React.js + Axios
+- ✔️ Backend - Spring Boot + JPA
+- ✔️ DB - MySQL
 <div align="center">
    <img src="https://github.com/famasboy888/ShoppingCart_Webapp_React_ReduxToolkit/assets/23441168/6913237c-c9f4-4b2e-b542-65ce6ac7a06e" title="React" alt="React" width="100" height="100"/>&nbsp;&nbsp;&nbsp;&nbsp;
    <img src="https://github.com/famasboy888/ManagementSystem_React_Spring-boot/assets/23441168/5d9bd9ca-97ef-4f4b-82b1-c8d4f9d84594" title="Spring" alt="Spring" width="250" height="130"/>&nbsp;&nbsp;&nbsp;&nbsp;
