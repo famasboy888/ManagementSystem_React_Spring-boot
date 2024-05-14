@@ -8,6 +8,10 @@
   color: white;
 }
 
-.action-button {
+.action-button{
   margin: 0.5rem;
+}
+
+.nav-cust-header{
+  margin: 1rem;
 }
