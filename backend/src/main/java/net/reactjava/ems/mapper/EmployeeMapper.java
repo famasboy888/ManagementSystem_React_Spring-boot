@@ -1,9 +1,12 @@
 package net.reactjava.ems.mapper;
-
 import net.reactjava.ems.dto.EmployeeDto;
 import net.reactjava.ems.entity.Employee;
 
+
 public class EmployeeMapper {
+    private EmployeeMapper() {
+    }
+
     public static EmployeeDto mapToEmployeeDto(Employee emp) {
         return new EmployeeDto(
                 emp.getId(),

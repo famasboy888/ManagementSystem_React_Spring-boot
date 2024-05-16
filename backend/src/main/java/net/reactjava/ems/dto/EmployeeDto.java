@@ -1,15 +1,12 @@
 package net.reactjava.ems.dto;
+import lombok.*;
 
-import jakarta.persistence.Column;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
 
+@AllArgsConstructor
 @Getter
 @Setter
 @NoArgsConstructor
-@AllArgsConstructor
+@Builder
 public class EmployeeDto {
     private Long id;
     private String firstName;

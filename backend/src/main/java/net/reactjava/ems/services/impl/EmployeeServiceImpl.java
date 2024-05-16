@@ -35,7 +35,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Override
     public List<EmployeeDto> getAllEmployee() {
         List<Employee> employees = employeeRepository.findAll();
-        return employees.stream().map(employee -> EmployeeMapper.mapToEmployeeDto(employee))
+        return employees.stream().map(EmployeeMapper::mapToEmployeeDto)
                 .collect(Collectors.toList());
     }
 
@@ -55,7 +55,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public Long deleteEmployee(Long employeeId) {
-        Employee employee = employeeRepository.findById(employeeId).orElseThrow(() ->
+        employeeRepository.findById(employeeId).orElseThrow(() ->
                 new ResourceNotFoundException("Employee with id " + employeeId + " not found so it cannot be deleted")
         );
 

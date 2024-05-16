@@ -2,7 +2,6 @@ package net.reactjava.ems.controller;
 
 import lombok.AllArgsConstructor;
 import net.reactjava.ems.dto.EmployeeDto;
-import net.reactjava.ems.entity.Employee;
 import net.reactjava.ems.services.EmployeeService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
