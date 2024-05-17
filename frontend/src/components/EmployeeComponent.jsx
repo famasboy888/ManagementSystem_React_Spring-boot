@@ -118,6 +118,7 @@ const EmployeeComponent = () => {
                   First Name
                 </label>
                 <input
+                  data-testid="form-field-firstname"
                   type="text"
                   placeholder="Enter first name"
                   name="firstName"
@@ -140,6 +141,7 @@ const EmployeeComponent = () => {
                   Last Name
                 </label>
                 <input
+                  data-testid="form-field-lastname"
                   type="text"
                   placeholder="Enter Last name"
                   name="lastName"
@@ -162,6 +164,7 @@ const EmployeeComponent = () => {
                   Email
                 </label>
                 <input
+                  data-testid="form-field-email"
                   type="text"
                   placeholder="Enter Last name"
                   name="email"
