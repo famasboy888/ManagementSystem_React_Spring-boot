@@ -1,9 +1,16 @@
-import { defineConfig } from "vitest/config";
+import { defineConfig, configDefaults } from "vitest/config";
 
 export default defineConfig({
   test: {
     environment: "jsdom",
     globals: true,
-    setupFiles: "tests/setup.js"
-  }
-})
+    coverage: {
+      exclude: [
+        ...configDefaults.exclude,
+        "src/main.jsx",
+        "coverage",
+        ".eslintrc.cjs",
+      ],
+    },
+  },
+});

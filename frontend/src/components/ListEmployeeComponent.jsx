@@ -16,7 +16,7 @@ function ListEmployeeComponent() {
         setEmployees(res.data);
       })
       .catch((err) => {
-        console.error(err.message);
+        console.error(err);
       });
   }, []);
 
@@ -33,14 +33,16 @@ function ListEmployeeComponent() {
         );
         setEmployees(newEmployees);
       })
-      .catch((err) => console.log(err));
+      .catch((err) => {
+        console.log(err);
+      });
   };
 
   return (
     <div className="container ">
-      <br/>
-      <br/>
-      <br/>
+      <br />
+      <br />
+      <br />
       <button
         type="button"
         onClick={() => handleAddEmployee()}
@@ -60,28 +62,34 @@ function ListEmployeeComponent() {
           </tr>
         </thead>
         <tbody>
-          {employees.map((data) => (
-            <tr key={data.id}>
-              <th scope="row">{data.id}</th>
-              <td>{data.firstName}</td>
-              <td>{data.lastName}</td>
-              <td>{data.email}</td>
-              <td>
-                <button
-                  className="btn btn-info action-button"
-                  onClick={() => handleUpdateButtons(data.id)}
-                >
-                  Update
-                </button>
-                <button
-                  className="btn btn-danger action-button"
-                  onClick={() => handleDeleteButtons(data.id)}
-                >
-                  Delete
-                </button>
-              </td>
+          {employees?.length > 0 ? (
+            employees.map((data) => (
+              <tr key={data.id}>
+                <th scope="row">{data.id}</th>
+                <td>{data.firstName}</td>
+                <td>{data.lastName}</td>
+                <td>{data.email}</td>
+                <td>
+                  <button
+                    className="btn btn-info action-button"
+                    onClick={() => handleUpdateButtons(data.id)}
+                  >
+                    Update
+                  </button>
+                  <button
+                    className="btn btn-danger action-button"
+                    onClick={() => handleDeleteButtons(data.id)}
+                  >
+                    Delete
+                  </button>
+                </td>
+              </tr>
+            ))
+          ) : (
+            <tr>
+              <td>No data found.</td>
             </tr>
-          ))}
+          )}
         </tbody>
       </table>
     </div>

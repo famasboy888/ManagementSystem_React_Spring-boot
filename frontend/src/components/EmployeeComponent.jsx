@@ -30,7 +30,10 @@ const EmployeeComponent = () => {
           setLastName(employee.lastName);
           setEmail(employee.email);
         })
-        .catch((err) => console.error(err));
+        .catch((err) => {
+          console.error(err);
+          navigate("*");
+        });
     }
   }, [id]);
 
@@ -50,17 +53,19 @@ const EmployeeComponent = () => {
             console.log(res.data);
             navigate("/employees");
           })
-          .catch((err) => console.error(err));
+          .catch((err) => {
+            console.error(err);
+          });
+      } else {
+        addEmployee(employee)
+          .then((res) => {
+            console.log(res.data);
+            navigate("/employees");
+          })
+          .catch((err) => {
+            console.error(err);
+          });
       }
-
-      addEmployee(employee)
-        .then((res) => {
-          console.log(res.data);
-          navigate("/employees");
-        })
-        .catch((err) => {
-          console.error(err);
-        });
     }
   };
 

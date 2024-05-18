@@ -1,5 +1,5 @@
+import React from "react";
 import "./App.css";
-import DummyEmployeeComponent from "./components/DummyEmployee";
 import EmployeeComponent from "./components/EmployeeComponent";
 import NotFound from "./components/error/NotFound";
 import FooterComponent from "./components/FooterComponent";
@@ -17,7 +17,6 @@ function App() {
         <Route path="/" element={<ListEmployeeComponent />} />
         <Route path="/employees" element={<ListEmployeeComponent />} />
         <Route path="/add-employee" element={<EmployeeComponent />} />
-        <Route path="/dummy/:id" element={<DummyEmployeeComponent />} />
         <Route path="/edit-employee/:id" element={<EmployeeComponent />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
