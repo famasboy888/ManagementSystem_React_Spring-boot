@@ -6,13 +6,20 @@
 - ✔️ Frontend - React.js + Axios
 - ✔️ Backend - Spring Boot + JPA
 - ✔️ DB - MySQL
-- ✔️ Unit Testing (Full Coverage 100%) - Mockito
 <div align="center">
    <img src="https://github.com/famasboy888/ShoppingCart_Webapp_React_ReduxToolkit/assets/23441168/6913237c-c9f4-4b2e-b542-65ce6ac7a06e" title="React" alt="React" width="100" height="100"/>&nbsp;&nbsp;&nbsp;&nbsp;
    <img src="https://github.com/famasboy888/ManagementSystem_React_Spring-boot/assets/23441168/5d9bd9ca-97ef-4f4b-82b1-c8d4f9d84594" title="Spring" alt="Spring" width="250" height="130"/>&nbsp;&nbsp;&nbsp;&nbsp;
    <img src="https://github.com/famasboy888/ManagementSystem_React_Spring-boot/assets/23441168/e201e84d-66f9-4366-960b-8b5413eb91d6" title="Node" alt="Node" width="200" height="100"/>&nbsp;&nbsp;
 </div>
 
+## Testing
+- ✔️ Vitest (Full Coverage 100%) - Frontend
+- ✔️ JUnit Testing with Mockito (Full Coverage 100%) - Backend
+
+<div align="center">
+   <img src="https://github.com/famasboy888/ManagementSystem_React_Spring-boot/assets/23441168/c16bcba6-766a-44e3-b538-18ec8c929141" title="Vitest" alt="Vitest" width="100" height="110"/>&nbsp;&nbsp;&nbsp;&nbsp;
+   <img src="https://github.com/famasboy888/ManagementSystem_React_Spring-boot/assets/23441168/296e6deb-0755-4be8-9beb-cea046eb118b" title="Spring" alt="Spring" width="220" height="130"/>&nbsp;&nbsp;&nbsp;&nbsp;
+</div>
 
 ### Home
 
